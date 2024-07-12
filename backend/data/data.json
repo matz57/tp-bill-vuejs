@@ -1,0 +1,72 @@
+{
+  "clients": [
+    {
+      "id": 1720777912367,
+      "firstName": "John",
+      "lastName": "Doe",
+      "companyName": "ABC Inc."
+    },
+    {
+      "id": 1720777912368,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "companyName": "XYZ Corp."
+    }
+  ],
+  "bills": [
+    {
+      "id": 1720789814196,
+      "billnum": "1234567890",
+      "description": "Invoice for services provided",
+      "date": "2022-01-01",
+      "client": {
+        "id": 1720777912367,
+        "firstName": "John",
+        "lastName": "Doe",
+        "companyName": "ABC Inc."
+      },
+      "prestations": [
+        {
+          "id": 1720789806435,
+          "description": "Web development",
+          "qty": 2,
+          "price": 500
+        },
+        {
+          "id": 1720789806436,
+          "description": "Design services",
+          "qty": 1,
+          "price": 300
+        }
+      ],
+      "discount": 50,
+      "paid": 200,
+      "totalHT": 1300,
+      "totalTTC": 1560
+    },
+    {
+      "id": 1720789814197,
+      "billnum": "0987654321",
+      "description": "Invoice for consulting services",
+      "date": "2022-02-01",
+      "client": {
+        "id": 1720777912368,
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "companyName": "XYZ Corp."
+      },
+      "prestations": [
+        {
+          "id": 1720789806437,
+          "description": "Consulting services",
+          "qty": 3,
+          "price": 200
+        }
+      ],
+      "discount": 0,
+      "paid": 0,
+      "totalHT": 600,
+      "totalTTC": 720
+    }
+  ]
+}
